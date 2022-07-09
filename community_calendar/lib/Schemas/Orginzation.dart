@@ -1,4 +1,4 @@
-import 'package:community_calendar/Schemas/Calendar.dart';
+import 'package:community_calendar/Schemas/calendar.dart';
 
 class Organization {
   Organization(

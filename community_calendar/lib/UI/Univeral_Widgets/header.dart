@@ -3,6 +3,7 @@ import 'package:community_calendar/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
+// ignore: must_be_immutable
 class Header extends StatelessWidget {
   Header({Key? key, this.showLogin = true, this.showSignup = true})
       : super(key: key);

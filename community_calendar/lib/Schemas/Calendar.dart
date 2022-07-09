@@ -1,4 +1,4 @@
-import 'package:community_calendar/Schemas/Event.dart';
+import 'package:community_calendar/Schemas/event.dart';
 
 class Calendar {
 

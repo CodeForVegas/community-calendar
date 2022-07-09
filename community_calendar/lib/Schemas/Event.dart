@@ -1,4 +1,4 @@
-import 'package:community_calendar/Schemas/Location.dart';
+import 'package:community_calendar/Schemas/location.dart';
 
 class Event {
 
