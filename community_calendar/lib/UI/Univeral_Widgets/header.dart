@@ -1,4 +1,4 @@
-import 'package:community_calendar/UI/Widgets/button.dart';
+import 'package:community_calendar/UI/Univeral_Widgets/button.dart';
 import 'package:community_calendar/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
