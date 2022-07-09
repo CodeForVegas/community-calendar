@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 
+// ignore: must_be_immutable
 class CFVTextField extends StatefulWidget {
   CFVTextField(
       {Key? key,
@@ -45,7 +46,7 @@ class _CFVTextFieldState extends State<CFVTextField> {
             vertical: widget.verticalPadding,
             horizontal: widget.horizontalPadding),
         child: Material(
-          borderRadius: BorderRadius.all(Radius.circular(50)),
+          borderRadius: const BorderRadius.all(Radius.circular(50)),
           shadowColor: Colors.black,
           elevation: 10,
           child: TextField(

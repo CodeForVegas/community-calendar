@@ -2,6 +2,7 @@ import 'package:community_calendar/constants.dart';
 import 'package:flutter/material.dart';
 
 
+// ignore: must_be_immutable
 class CFVButton extends StatelessWidget {
   CFVButton(
       {Key? key,
@@ -32,7 +33,7 @@ class CFVButton extends StatelessWidget {
         elevation: elevation,
         borderRadius: BorderRadius.circular(radius),
         child: Padding(
-          padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
+          padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
           child: Container(
               decoration: BoxDecoration(
                 color: color,
