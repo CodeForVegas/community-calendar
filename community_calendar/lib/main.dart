@@ -1,8 +1,10 @@
 import 'package:community_calendar/UI/Screens/home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:url_strategy/url_strategy.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 void main() {
+  setPathUrlStrategy();
   runApp(const MyApp());
 }
 
