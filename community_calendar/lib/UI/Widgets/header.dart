@@ -4,7 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class Header extends StatelessWidget {
-  const Header({Key? key}) : super(key: key);
+  Header({Key? key, this.showLogin = true, this.showSignup = true})
+      : super(key: key);
+
+  bool showLogin;
+  bool showSignup;
 
   @override
   Widget build(BuildContext context) {
@@ -20,28 +24,37 @@ class Header extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Constants.heading(
-                text: 'Community Calendar',
-                color: Colors.white,
-                fontSize: 20,
-                weight: FontWeight.w700),
+            GestureDetector(
+              onTap: () {
+                context.vxNav.popToRoot();
+              },
+              child: Constants.heading(
+                  text: 'Community Calendar',
+                  color: Colors.white,
+                  fontSize: 20,
+                  weight: FontWeight.w700),
+            ),
             Row(
               children: [
-                CFVButton(
-                  text: 'Login',
-                  onpressed: () {
-                    context.vxNav.push(Uri.parse('/login'));
-                  },
-                ),
+                showLogin
+                    ? CFVButton(
+                        text: 'Login',
+                        onpressed: () {
+                          context.vxNav.push(Uri.parse('/login'));
+                        },
+                      )
+                    : const SizedBox(),
                 SizedBox(
                   width: MediaQuery.of(context).size.width * 0.04,
                 ),
-                CFVButton(
-                  text: 'Signup',
-                  onpressed: () {
-                    context.vxNav.push(Uri.parse('/signup'));
-                  },
-                )
+                showSignup
+                    ? CFVButton(
+                        text: 'Signup',
+                        onpressed: () {
+                          context.vxNav.push(Uri.parse('/signup'));
+                        },
+                      )
+                    : const SizedBox()
               ],
             )
           ],

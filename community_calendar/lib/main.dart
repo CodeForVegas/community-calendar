@@ -1,4 +1,6 @@
 import 'package:community_calendar/UI/Screens/home_screen.dart';
+import 'package:community_calendar/UI/Screens/login_screen.dart';
+import 'package:community_calendar/UI/Screens/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:url_strategy/url_strategy.dart';
 import 'package:velocity_x/velocity_x.dart';
@@ -21,8 +23,8 @@ class MyApp extends StatelessWidget {
       routeInformationParser: VxInformationParser(),
       routerDelegate: VxNavigator(routes: {
         '/': (_, __) => const MaterialPage(child: HomeScreen()),
-        '/login': (_, __) => const MaterialPage(child: HomeScreen()),
-        '/signup': (_, __) => const MaterialPage(child: HomeScreen()),
+        '/login': (_, __) =>  const MaterialPage(child: LoginScreen()),
+        '/signup': (_, __) => const MaterialPage(child: SignupScreen()),
       }),
     );
   }

@@ -1,3 +1,4 @@
+import 'package:community_calendar/UI/Widgets/header.dart';
 import 'package:flutter/material.dart';
 
 class SignupScreen extends StatelessWidget {
@@ -5,6 +6,10 @@ class SignupScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: ListView(
+        children: [ Header(showSignup: false,)],
+      ),
+    );
   }
 }
