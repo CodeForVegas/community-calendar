@@ -1,3 +1,4 @@
+import 'package:community_calendar/constants.dart';
 import 'package:flutter/material.dart';
 
 class Header extends StatelessWidget {
@@ -16,7 +17,12 @@ class Header extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          
+          Constants.heading(text: 'Community Calendar'),
+          Row(
+            children: [
+              
+            ],
+          )
         ],
       ),),
     );

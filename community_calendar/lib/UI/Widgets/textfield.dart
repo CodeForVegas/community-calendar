@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 
-class DesktopTextfield extends StatefulWidget {
-  DesktopTextfield(
+class CFVTextField extends StatefulWidget {
+  CFVTextField(
       {Key? key,
       this.controller,
       this.onChanged,
@@ -32,10 +32,10 @@ class DesktopTextfield extends StatefulWidget {
   Function(String)? onSumbit;
 
   @override
-  State<DesktopTextfield> createState() => _DesktopTextfieldState();
+  State<CFVTextField> createState() => _CFVTextFieldState();
 }
 
-class _DesktopTextfieldState extends State<DesktopTextfield> {
+class _CFVTextFieldState extends State<CFVTextField> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
