@@ -5,6 +5,9 @@ class Event {
    Event({
     this.description = '',
     this.title = '',
+    this.start,
+    this.end,
+    this.location
   });
 
   String description;
