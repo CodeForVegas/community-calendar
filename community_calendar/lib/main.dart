@@ -1,6 +1,6 @@
-import 'package:community_calendar/UI/Screens/home_screen.dart';
-import 'package:community_calendar/UI/Screens/login_screen.dart';
-import 'package:community_calendar/UI/Screens/signup_screen.dart';
+import 'package:community_calendar/UI/Screens/HomeScreen/home_screen.dart';
+import 'package:community_calendar/UI/Screens/LoginScreen/login_screen.dart';
+import 'package:community_calendar/UI/Screens/SignupScreen/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:url_strategy/url_strategy.dart';
 import 'package:velocity_x/velocity_x.dart';
