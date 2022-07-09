@@ -1,4 +1,5 @@
 import 'package:community_calendar/Schemas/event.dart';
+import 'package:community_calendar/UI/Univeral_Widgets/button.dart';
 import 'package:community_calendar/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -51,11 +52,25 @@ class HomeScreenTile extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: MediaQuery.of(context).size.width * 0.01),
-                Constants.text(text: event.location?.address1 ?? ''),
-                Constants.text(text: event.location?.address2 ?? ''),
-                Constants.text(text: event.location?.state ?? ''),
-                Constants.text(text: event.location?.city ?? ''),
-                Constants.text(text: event.location?.zipcode ?? ''),
+                Padding(
+                  padding: EdgeInsets.symmetric(
+                      horizontal: MediaQuery.of(context).size.width * 0.03),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Column(
+                        children: [
+                          Constants.text(text: event.location?.address1 ?? ''),
+                          Constants.text(text: event.location?.address2 ?? ''),
+                          Constants.text(text: event.location?.state ?? ''),
+                          Constants.text(text: event.location?.city ?? ''),
+                          Constants.text(text: event.location?.zipcode ?? ''),
+                        ],
+                      ),
+                      CFVButton(text: 'Add To Calendar'),
+                    ],
+                  ),
+                )
               ],
             )
           ],
